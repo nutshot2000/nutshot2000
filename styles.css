@@ -301,6 +301,27 @@ h1 {
     background: var(--container-bg);
 }
 
+/* Ad Containers */
+.ad-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.top-banner, .bottom-banner {
+    min-height: 90px;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    margin: 1rem auto;
+}
+
+.center-ad {
+    min-height: 250px;
+    margin: 2rem auto;
+}
+
 /* Ad Spaces (Left and Right Margins) */
 .ad-space {
     position: fixed;
@@ -308,14 +329,12 @@ h1 {
     transform: translateY(-50%);
     width: 160px;
     height: 600px;
-    background: var(--container-bg);
-    border: 1px solid var(--accent-color);
+    background: var(--bg-secondary);
     border-radius: 5px;
     box-shadow: 0 2px 6px var(--shadow-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-color);
     z-index: 1000;
     overflow: hidden;
 }
@@ -328,37 +347,33 @@ h1 {
     right: 20px;
 }
 
-/* Hide ads on mobile screens for better usability */
-@media (max-width: 500px) {
+/* In-article ads for blog posts */
+.blog-ad {
+    margin: 2rem 0;
+    min-height: 280px;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Responsive Design for Ads */
+@media (max-width: 1400px) {
     .ad-space {
         display: none;
     }
-    .action-bar {
-        flex-direction: column;
-        gap: 10px;
-        margin: 15px 0 5px;
-        padding: 10px 15px;
-        max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .top-banner, .bottom-banner {
+        min-height: 50px;
     }
-    .header {
-        max-width: 90%;
-        padding: 10px 15px;
+    
+    .center-ad {
+        min-height: 250px;
     }
-    h1 {
-        font-size: 24px;
-    }
-    .converter {
-        max-width: 90%;
-    }
-    .units, .inputs {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .action-btn {
-        width: 100%;
-    }
-    .action-btn.small {
-        width: 50%;
+    
+    .blog-ad {
+        min-height: 250px;
     }
 }
 
