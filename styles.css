@@ -117,6 +117,9 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    position: relative;
+    padding-left: 170px;
+    padding-right: 170px;
 }
 
 /* Action Bar (Top Buttons) */
@@ -157,24 +160,36 @@ body {
 /* Header */
 .header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 500px;
-    margin-bottom: 20px;
-    padding: 15px 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px 20px;
     background: linear-gradient(135deg, rgba(10, 25, 47, 0.9), rgba(30, 58, 138, 0.9));
     border-radius: 8px;
     box-shadow: 0 4px 12px var(--shadow-color);
+    text-align: center;
 }
 
 h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 700;
     color: var(--header-text-color);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: var(--text-secondary);
+    margin: 15px 0 0 0;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.4;
 }
 
 /* Converter */
@@ -304,22 +319,31 @@ h1 {
 /* Ad Containers */
 .ad-container {
     width: 100%;
-    max-width: 1200px;
-    margin: 1rem auto;
-    text-align: center;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    min-height: 90px;
 }
 
 .top-banner, .bottom-banner {
+    width: 100%;
+    max-width: 728px;
+    margin: 20px auto;
     min-height: 90px;
-    background: var(--bg-secondary);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
-    margin: 1rem auto;
+    overflow: hidden;
 }
 
 .center-ad {
+    width: 100%;
+    max-width: 300px;
     min-height: 250px;
-    margin: 2rem auto;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 /* Ad Spaces (Left and Right Margins) */
@@ -329,22 +353,17 @@ h1 {
     transform: translateY(-50%);
     width: 160px;
     height: 600px;
-    background: var(--bg-secondary);
-    border-radius: 5px;
-    box-shadow: 0 2px 6px var(--shadow-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
     overflow: hidden;
 }
 
 .left-ad {
-    left: 20px;
+    left: 5px;
 }
 
 .right-ad {
-    right: 20px;
+    right: 5px;
 }
 
 /* In-article ads for blog posts */
@@ -356,8 +375,21 @@ h1 {
     overflow: hidden;
 }
 
-/* Responsive Design for Ads */
-@media (max-width: 1400px) {
+/* Main content wrapper */
+.main-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     .ad-space {
         display: none;
     }
@@ -365,15 +397,32 @@ h1 {
 
 @media (max-width: 768px) {
     .top-banner, .bottom-banner {
+        max-width: 100%;
         min-height: 50px;
     }
     
     .center-ad {
-        min-height: 250px;
+        max-width: 100%;
+    }
+    
+    .main-content {
+        padding: 0 10px;
     }
     
     .blog-ad {
         min-height: 250px;
+    }
+
+    .header {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 16px;
     }
 }
 
@@ -442,14 +491,6 @@ h1 {
 .modal-content button:hover {
     opacity: 0.85;
     transform: translateY(-2px);
-}
-
-.subtitle {
-    text-align: center;
-    color: var(--text-secondary);
-    margin-top: -10px;
-    margin-bottom: 20px;
-    font-size: 1.1rem;
 }
 
 .features-section {

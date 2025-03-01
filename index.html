@@ -43,21 +43,128 @@
             </ul>
         </div>
     </nav>
-    <div class="action-bar">
-        <button class="theme-btn" id="theme-toggle">🌙 Dark Mode</button>
-        <button class="bookmark-btn">📑 Bookmark</button>
-        <button class="share-btn">📤 Share</button>
-    </div>
-    <div class="ad-container top-banner">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-7855285460511124"
-             data-ad-slot="YOUR_AD_SLOT_ID"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+    <div class="main-content">
+        <div class="action-bar">
+            <button class="theme-btn" id="theme-toggle">🌙 Dark Mode</button>
+            <button class="bookmark-btn">📑 Bookmark</button>
+            <button class="share-btn">📤 Share</button>
+        </div>
+        <div class="ad-container top-banner">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7855285460511124"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <header class="header">
+            <h1>Unit Converter Elite</h1>
+            <p class="subtitle">Professional Unit Conversion Tool - Free & Easy to Use</p>
+        </header>
+        <main class="converter">
+            <select id="category" class="select" aria-label="Select conversion category">
+                <option value="">Select Category</option>
+            </select>
+            <div class="units">
+                <select id="from-unit" class="select" aria-label="Select unit to convert from">
+                    <option value="">From</option>
+                </select>
+                <button class="swap-btn" aria-label="Swap units">↔️</button>
+                <select id="to-unit" class="select" aria-label="Select unit to convert to">
+                    <option value="">To</option>
+                </select>
+            </div>
+            <div class="inputs">
+                <input type="number" id="input-value" placeholder="Value" aria-label="Enter value to convert">
+                <input type="text" id="result" readonly placeholder="Result" aria-label="Conversion result">
+            </div>
+            <div class="buttons">
+                <button id="convert-btn" class="action-btn" aria-label="Convert value">Convert</button>
+                <div class="secondary-btns">
+                    <button id="reset-btn" class="action-btn small" aria-label="Reset inputs">Reset</button>
+                    <button id="copy-btn" class="action-btn small" aria-label="Copy result">Copy Result</button>
+                </div>
+            </div>
+        </main>
+        <div class="ad-container center-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7855285460511124"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="rectangle"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <div class="recent-conversions">
+            <h2>Recent Conversions</h2>
+            <div id="recent-list" aria-live="polite"></div>
+        </div>
+        <div class="ad-container bottom-banner">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7855285460511124"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <div class="features-section">
+            <h2>Why Choose Unit Converter Elite?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>15+ Professional Categories</h3>
+                    <p>Access comprehensive unit conversions across length, weight, temperature, speed, area, volume, time, energy, pressure, power, and digital storage. Perfect for students, professionals, and everyday use.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Scientific Precision</h3>
+                    <p>Our advanced algorithms ensure accurate conversions with up to 10 decimal places. Built on verified conversion formulas and constants, making it ideal for scientific and engineering calculations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Intuitive Interface</h3>
+                    <p>Streamlined design with quick unit switching, conversion history, and instant results. Save time with popular conversions and customize your experience with dark/light mode options.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Universal Access</h3>
+                    <p>Optimized for all devices with a responsive design. Access accurate conversions anywhere, anytime. No registration required, and completely free to use.</p>
+                </div>
+            </div>
+        </div>
+        <div class="categories-section">
+            <h2>Conversion Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <h3>Length Conversions</h3>
+                    <p>Convert between metric and imperial units including meters, kilometers, miles, feet, and more. Perfect for construction, navigation, and everyday measurements.</p>
+                </div>
+                <div class="category-card">
+                    <h3>Weight & Mass</h3>
+                    <p>Accurate conversions between kilograms, pounds, ounces, and other weight units. Essential for cooking, shipping, and scientific calculations.</p>
+                </div>
+                <div class="category-card">
+                    <h3>Temperature</h3>
+                    <p>Switch between Celsius, Fahrenheit, and Kelvin with precise formulas. Ideal for weather, cooking, and scientific applications.</p>
+                </div>
+                <div class="category-card">
+                    <h3>Digital Storage</h3>
+                    <p>Convert between bytes, kilobytes, megabytes, and larger units. Essential for IT professionals and digital storage planning.</p>
+                </div>
+            </div>
+        </div>
+        <div class="popular-conversions">
+            <h2>Popular Conversions</h2>
+            <div class="conversion-links">
+                <a href="#" data-from="Kilometers" data-to="Miles">Kilometers to Miles</a>
+                <a href="#" data-from="Celsius" data-to="Fahrenheit">Celsius to Fahrenheit</a>
+                <a href="#" data-from="Kilograms" data-to="Pounds">Kilograms to Pounds</a>
+                <a href="#" data-from="Meters" data-to="Feet">Meters to Feet</a>
+            </div>
+        </div>
     </div>
     <div class="ad-space left-ad">
         <ins class="adsbygoogle"
@@ -69,35 +176,6 @@
              (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
-    <header class="header">
-        <h1>Unit Converter Elite</h1>
-        <p class="subtitle">Professional Unit Conversion Tool - Free & Easy to Use</p>
-    </header>
-    <main class="converter">
-        <select id="category" class="select" aria-label="Select conversion category">
-            <option value="">Select Category</option>
-        </select>
-        <div class="units">
-            <select id="from-unit" class="select" aria-label="Select unit to convert from">
-                <option value="">From</option>
-            </select>
-            <button class="swap-btn" aria-label="Swap units">↔️</button>
-            <select id="to-unit" class="select" aria-label="Select unit to convert to">
-                <option value="">To</option>
-            </select>
-        </div>
-        <div class="inputs">
-            <input type="number" id="input-value" placeholder="Value" aria-label="Enter value to convert">
-            <input type="text" id="result" readonly placeholder="Result" aria-label="Conversion result">
-        </div>
-        <div class="buttons">
-            <button id="convert-btn" class="action-btn" aria-label="Convert value">Convert</button>
-            <div class="secondary-btns">
-                <button id="reset-btn" class="action-btn small" aria-label="Reset inputs">Reset</button>
-                <button id="copy-btn" class="action-btn small" aria-label="Copy result">Copy Result</button>
-            </div>
-        </div>
-    </main>
     <div class="ad-space right-ad">
         <ins class="adsbygoogle"
              style="display:block"
@@ -107,82 +185,6 @@
         <script>
              (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-    </div>
-    <div class="ad-container center-ad">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-7855285460511124"
-             data-ad-slot="YOUR_AD_SLOT_ID"
-             data-ad-format="rectangle"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-    <div class="recent-conversions">
-        <h2>Recent Conversions</h2>
-        <div id="recent-list" aria-live="polite"></div>
-    </div>
-    <div class="ad-container bottom-banner">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-7855285460511124"
-             data-ad-slot="YOUR_AD_SLOT_ID"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-    <div class="features-section">
-        <h2>Why Choose Unit Converter Elite?</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>15+ Professional Categories</h3>
-                <p>Access comprehensive unit conversions across length, weight, temperature, speed, area, volume, time, energy, pressure, power, and digital storage. Perfect for students, professionals, and everyday use.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Scientific Precision</h3>
-                <p>Our advanced algorithms ensure accurate conversions with up to 10 decimal places. Built on verified conversion formulas and constants, making it ideal for scientific and engineering calculations.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Intuitive Interface</h3>
-                <p>Streamlined design with quick unit switching, conversion history, and instant results. Save time with popular conversions and customize your experience with dark/light mode options.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Universal Access</h3>
-                <p>Optimized for all devices with a responsive design. Access accurate conversions anywhere, anytime. No registration required, and completely free to use.</p>
-            </div>
-        </div>
-    </div>
-    <div class="categories-section">
-        <h2>Conversion Categories</h2>
-        <div class="categories-grid">
-            <div class="category-card">
-                <h3>Length Conversions</h3>
-                <p>Convert between metric and imperial units including meters, kilometers, miles, feet, and more. Perfect for construction, navigation, and everyday measurements.</p>
-            </div>
-            <div class="category-card">
-                <h3>Weight & Mass</h3>
-                <p>Accurate conversions between kilograms, pounds, ounces, and other weight units. Essential for cooking, shipping, and scientific calculations.</p>
-            </div>
-            <div class="category-card">
-                <h3>Temperature</h3>
-                <p>Switch between Celsius, Fahrenheit, and Kelvin with precise formulas. Ideal for weather, cooking, and scientific applications.</p>
-            </div>
-            <div class="category-card">
-                <h3>Digital Storage</h3>
-                <p>Convert between bytes, kilobytes, megabytes, and larger units. Essential for IT professionals and digital storage planning.</p>
-            </div>
-        </div>
-    </div>
-    <div class="popular-conversions">
-        <h2>Popular Conversions</h2>
-        <div class="conversion-links">
-            <a href="#" data-from="Kilometers" data-to="Miles">Kilometers to Miles</a>
-            <a href="#" data-from="Celsius" data-to="Fahrenheit">Celsius to Fahrenheit</a>
-            <a href="#" data-from="Kilograms" data-to="Pounds">Kilograms to Pounds</a>
-            <a href="#" data-from="Meters" data-to="Feet">Meters to Feet</a>
-        </div>
     </div>
     <footer class="footer">
         <div class="footer-content">
