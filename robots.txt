@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /privacy
+Allow: /terms
+
+Sitemap: https://unitconverterelite.com/sitemap.xml
+
+# Block access to certain files
+Disallow: /contact.js
+Disallow: /script.js
+Disallow: /*.json$
+Disallow: /*.txt$
+Disallow: /README.md 

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Unit Converter Elite - Free Professional Unit Conversion Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Professional unit converter with 15+ categories including length, weight, temperature, speed, and more. Free, accurate, and easy to use.">
+    <meta name="keywords" content="unit converter, conversion tool, length converter, weight converter, temperature converter, speed converter, area converter, volume converter, time converter, digital storage converter">
+    <meta name="author" content="NUTSHOT">
+    <meta property="og:title" content="Unit Converter Elite - Professional Conversion Tool">
+    <meta property="og:description" content="Convert units across multiple categories with precision. Free and easy to use.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unitconverterelite.com">
+    <meta property="og:image" content="https://unitconverterelite.com/images/og-image.png">
+    <meta property="og:site_name" content="Unit Converter Elite">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Unit Converter Elite - Professional Conversion Tool">
+    <meta name="twitter:description" content="Convert units across multiple categories with precision. Free and easy to use.">
+    <meta name="twitter:image" content="https://unitconverterelite.com/images/og-image.png">
+    
+    <!-- Additional SEO tags -->
+    <link rel="canonical" href="https://unitconverterelite.com">
+    <meta name="theme-color" content="#0a192f">
+    <meta name="robots" content="index, follow">
+    <!-- AdSense Code with Your Publisher ID -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-785528546051124" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">Unit Converter Elite</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="action-bar">
+        <button class="theme-btn" id="theme-toggle">🌙 Dark Mode</button>
+        <button class="bookmark-btn">📑 Bookmark</button>
+        <button class="share-btn">📤 Share</button>
+    </div>
+    <div class="ad-space left-ad">
+        <!-- Responsive Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-785528546051124"
+             data-ad-slot="YOUR_AD_SLOT_ID"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <header class="header">
+        <h1>Unit Converter Elite</h1>
+        <p class="subtitle">Professional Unit Conversion Tool - Free & Easy to Use</p>
+    </header>
+    <main class="converter">
+        <select id="category" class="select" aria-label="Select conversion category">
+            <option value="">Select Category</option>
+        </select>
+        <div class="units">
+            <select id="from-unit" class="select" aria-label="Select unit to convert from">
+                <option value="">From</option>
+            </select>
+            <button class="swap-btn" aria-label="Swap units">↔️</button>
+            <select id="to-unit" class="select" aria-label="Select unit to convert to">
+                <option value="">To</option>
+            </select>
+        </div>
+        <div class="inputs">
+            <input type="number" id="input-value" placeholder="Value" aria-label="Enter value to convert">
+            <input type="text" id="result" readonly placeholder="Result" aria-label="Conversion result">
+        </div>
+        <div class="buttons">
+            <button id="convert-btn" class="action-btn" aria-label="Convert value">Convert</button>
+            <div class="secondary-btns">
+                <button id="reset-btn" class="action-btn small" aria-label="Reset inputs">Reset</button>
+                <button id="copy-btn" class="action-btn small" aria-label="Copy result">Copy Result</button>
+            </div>
+        </div>
+    </main>
+    <div class="ad-space right-ad">Ad Space (Right)</div>
+    <div class="recent-conversions">
+        <h2>Recent Conversions</h2>
+        <div id="recent-list" aria-live="polite"></div>
+    </div>
+    <div class="adsense" aria-hidden="true">AdSense Ad Here (300x250)</div>
+    <div class="features-section">
+        <h2>Why Choose Unit Converter Elite?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>15+ Professional Categories</h3>
+                <p>Access comprehensive unit conversions across length, weight, temperature, speed, area, volume, time, energy, pressure, power, and digital storage. Perfect for students, professionals, and everyday use.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Scientific Precision</h3>
+                <p>Our advanced algorithms ensure accurate conversions with up to 10 decimal places. Built on verified conversion formulas and constants, making it ideal for scientific and engineering calculations.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Intuitive Interface</h3>
+                <p>Streamlined design with quick unit switching, conversion history, and instant results. Save time with popular conversions and customize your experience with dark/light mode options.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Universal Access</h3>
+                <p>Optimized for all devices with a responsive design. Access accurate conversions anywhere, anytime. No registration required, and completely free to use.</p>
+            </div>
+        </div>
+    </div>
+    <div class="categories-section">
+        <h2>Conversion Categories</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <h3>Length Conversions</h3>
+                <p>Convert between metric and imperial units including meters, kilometers, miles, feet, and more. Perfect for construction, navigation, and everyday measurements.</p>
+            </div>
+            <div class="category-card">
+                <h3>Weight & Mass</h3>
+                <p>Accurate conversions between kilograms, pounds, ounces, and other weight units. Essential for cooking, shipping, and scientific calculations.</p>
+            </div>
+            <div class="category-card">
+                <h3>Temperature</h3>
+                <p>Switch between Celsius, Fahrenheit, and Kelvin with precise formulas. Ideal for weather, cooking, and scientific applications.</p>
+            </div>
+            <div class="category-card">
+                <h3>Digital Storage</h3>
+                <p>Convert between bytes, kilobytes, megabytes, and larger units. Essential for IT professionals and digital storage planning.</p>
+            </div>
+        </div>
+    </div>
+    <div class="popular-conversions">
+        <h2>Popular Conversions</h2>
+        <div class="conversion-links">
+            <a href="#" data-from="Kilometers" data-to="Miles">Kilometers to Miles</a>
+            <a href="#" data-from="Celsius" data-to="Fahrenheit">Celsius to Fahrenheit</a>
+            <a href="#" data-from="Kilograms" data-to="Pounds">Kilograms to Pounds</a>
+            <a href="#" data-from="Meters" data-to="Feet">Meters to Feet</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Popular Tools</h3>
+                <ul>
+                    <li><a href="#length">Length Converter</a></li>
+                    <li><a href="#weight">Weight Converter</a></li>
+                    <li><a href="#temperature">Temperature Converter</a></li>
+                    <li><a href="#speed">Speed Converter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://twitter.com/UnitConverterElite" target="_blank" rel="noopener" aria-label="Follow us on Twitter">Twitter</a>
+                    <a href="https://facebook.com/UnitConverterElite" target="_blank" rel="noopener" aria-label="Follow us on Facebook">Facebook</a>
+                    <a href="https://linkedin.com/company/unit-converter-elite" target="_blank" rel="noopener" aria-label="Follow us on LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Unit Converter Elite | Professional Unit Conversion Tools | All Rights Reserved</p>
+    </footer>
+    <div id="modal" class="modal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <span class="close-btn" aria-label="Close modal">×</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Unit Converter Elite",
+        "description": "Professional unit converter with 15+ categories including length, weight, temperature, speed, and more. Free, accurate, and easy to use.",
+        "url": "https://unitconverterelite.com",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "15+ conversion categories",
+            "Scientific precision calculations",
+            "Instant results",
+            "Mobile responsive",
+            "Dark/light mode",
+            "History tracking"
+        ],
+        "author": {
+            "@type": "Organization",
+            "name": "Unit Converter Elite",
+            "url": "https://unitconverterelite.com"
+        }
+    }
+    </script>
+</body>
+</html>
